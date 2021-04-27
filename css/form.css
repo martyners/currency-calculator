@@ -1,0 +1,48 @@
+.form {
+    text-align: center;
+}
+
+.form__legend {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: hsl(182, 25%, 30%);
+    padding: 20px;
+}
+
+.form__label {
+    display: inline-block;
+    width: 120px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.form__input {
+    width: 200px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.form__button {
+    padding: 3px;
+    margin: 15px;
+    width: 320px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    font-weight: 700;
+    color: hsl(182, 25%, 30%);
+    border-color: hsl(182, 25%, 50%);
+}
+
+.form__button:hover {
+    border-color: hsl(182, 25%, 30%);
+}
+
+.form__resultAmount {
+    font-weight: 600;
+}
+
+.form__courseDay {
+    font-size: 13px;
+    height: 40px;
+}

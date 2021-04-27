@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/container.css" rel="stylesheet" type="text/css">
+    <link href="./css/form.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <script defer src="./js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form js-form">
+            <fieldset>
+                <legend class="form__legend">
+                    Kalkulator walut
+                </legend>
+                <p>
+                    <label class="form__label">Kwota w PLN
+                    </label>
+                    <input class="form__input js-amount" type="number" name="PLN" autofocus required min="0.01"
+                        step="0.01">
+                </p>
+                <p>
+                    <label class="form__label">Waluta
+                    </label>
+                    <select class="form__input js-currency" name="currency">
+                        <option value="EUR">Euro</option>
+                        <option value="USD">Dolar amerykański</option>
+                    </select>
+                </p>
+                <p>
+                    <button class="form__button js-button" type="submit">Przelicz</button>
+                </p>
+                <p class="form__result"> Kwota po przeliczeniu to: <span class="form__resultAmount js-result"></span>
+                </p>
+                <p class="form__courseDay js-courseDay">  </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
