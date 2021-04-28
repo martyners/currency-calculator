@@ -1,7 +1,7 @@
 # Currency converter
 
 ## Demo
-https://martyners.github.io/currency-convector/
+https://martyners.github.io/currency-converter2/
 
 ## General info
 > On this page you can calculate exchange from PLN in currency converter. You find EUR and USD.
