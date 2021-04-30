@@ -9,12 +9,15 @@ let courseDay = document.querySelector(".js-courseDay");
 buttonElement.addEventListener("click", (event) => {
     event.preventDefault();
     courseDay.innerText = "Kurs z dnia 25 kwietnia, 06:06 UTC";
+    let amount;
+
     switch (currenyElement.value) {
         case "EUR":
-            resultElement.innerText = (amountElement.value / 4.56).toFixed(2) + " euro ";
+            amount = (amountElement.value / 4.56).toFixed(2);
             break;
         case "USD":
-            resultElement.innerText = (amountElement.value / 3.77).toFixed(2) + " dolarów";
+            amount = (amountElement.value / 3.77).toFixed(2);
             break;
     };
+    resultElement.innerText = `${amount} ${currenyElement.value}`;
 });
