@@ -1,7 +1,7 @@
 .container {
     font-family: 'Roboto', sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    background-image: url("../images/background.png");
+    background-repeat: space;
+    background-size: contain;
+    background-position: center;
 }
