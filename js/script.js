@@ -1,23 +1,44 @@
-// let formElement = document.querySelector(".js-form");  form jeśli zamiast button.addEnevt bylby formElemnt na submit
-let buttonElement = document.querySelector(".js-button");
-let resultElement = document.querySelector(".js-result");
-let amountElement = document.querySelector(".js-amount");
-let currenyElement = document.querySelector(".js-currency");
-let courseDay = document.querySelector(".js-courseDay");
+{
 
+    const calculateAmount = (amount, currency) => {
+        const rateEUR = 4.56;
+        const rateUSD = 3.77;
 
-buttonElement.addEventListener("click", (event) => {
-    event.preventDefault();
-    courseDay.innerText = "Kurs z dnia 25 kwietnia, 06:06 UTC";
-    let amount;
-
-    switch (currenyElement.value) {
-        case "EUR":
-            amount = (amountElement.value / 4.56).toFixed(2);
-            break;
-        case "USD":
-            amount = (amountElement.value / 3.77).toFixed(2);
-            break;
+        switch (currency) {
+            case "EUR":
+                return (amount / rateEUR).toFixed(2);
+            case "USD":
+                return (amount / rateUSD).toFixed(2);
+        };
     };
-    resultElement.innerText = `${amount} ${currenyElement.value}`;
-});
+
+    const course = () => {
+        const courseDay = document.querySelector(".js-courseDay");
+        courseDay.innerText = "Kurs z dnia 25 kwietnia, 06:06 UTC"
+    };
+
+    const updateResultText = (currency, result) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.innerText = `${result} ${currency}`
+    };
+
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+        const currenyElement = document.querySelector(".js-currency");
+        const amountElement = document.querySelector(".js-amount");
+        const currency = currenyElement.value;
+        const amount = +amountElement.value;
+
+        const result = calculateAmount(amount, currency);
+        course();
+        updateResultText(currency, result);
+    };
+
+    const init = () => {
+        const buttonElement = document.querySelector(".js-button");
+        buttonElement.addEventListener("click", onFormSubmit);
+    };
+
+    init();
+}
