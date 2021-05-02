@@ -9,8 +9,9 @@ https://martyners.github.io/currency-converter2/
 ## Languages and technologies
 - HTML
 - CSS
-- JS
+- ES6+ JS
 - BEM
+- Flex
 
 ## Status
 Project is in progress.
