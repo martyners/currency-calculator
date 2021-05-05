@@ -13,8 +13,8 @@
     };
 
     const course = () => {
-        const courseDay = document.querySelector(".js-courseDay");
-        courseDay.innerText = "Kurs z dnia 25 kwietnia, 06:06 UTC"
+        const courseDayElement = document.querySelector(".js-courseDay");
+        courseDayElement.innerText = "Kurs z dnia 25 kwietnia, 06:06 UTC"
     };
 
     const updateResultText = (currency, result) => {
