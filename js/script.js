@@ -6,9 +6,9 @@
 
         switch (currency) {
             case "EUR":
-                return (amount / rateEUR).toFixed(2);
+                return (amount / rateEUR);
             case "USD":
-                return (amount / rateUSD).toFixed(2);
+                return (amount / rateUSD);
         };
     };
 
@@ -30,7 +30,7 @@
         const currency = currenyElement.value;
         const amount = +amountElement.value;
 
-        const result = calculateAmount(amount, currency);
+        const result = (calculateAmount(amount, currency)).toFixed(2);
         course();
         updateResultText(currency, result);
     };
