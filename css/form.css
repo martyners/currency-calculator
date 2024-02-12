@@ -1,52 +1,31 @@
 .form {
-    text-align: center;
-    max-width: 800px;
+    padding: 20px;
+    max-width: 600px;
     margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 20px;
+
 }
 
 .form__legend {
-    text-align: center;
-    font-weight: 700;
-    font-size: 25px;
-    color: hsl(182, 25%, 30%);
-    padding: 20px;
+    margin: 0 auto;
 }
 
 .form__labelText {
     display: inline-block;
-    width: 120px;
-    font-weight: 600;
-    padding: 10px;
+    width: 150px;
+    font-weight: bold;
 }
 
 .form__input {
-    width: 200px;
-    border-radius: 5px;
-    padding: 3px;
+    width: 150px;
 }
 
 .form__button {
-    padding: 3px;
-    margin: 15px;
-    width: 320px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
-    font-weight: 700;
-    color: hsl(182, 25%, 30%);
-    border-color: hsl(182, 25%, 50%);
+    border-radius: 10px;
+    width: 300px;
+    background-color: hsl(15, 72%, 75%);
 }
 
 .form__button:hover {
-    border-color: hsl(182, 25%, 30%);
-}
+    background-color: hsl(15, 72%, 80%);
 
-.form__resultAmount {
-    font-weight: 600;
-}
-
-.form__courseDay {
-    font-size: 13px;
-    height: 40px;
 }
