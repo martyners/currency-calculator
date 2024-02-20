@@ -11,17 +11,16 @@
     const result = (amount / exchangeRate).toFixed(2);
     resultElement.innerText = result;
   }
+
   const onSubmit = (event) => {
-   
     event.preventDefault();  
     calculateResalt();
   };
   
-  const formElement = document.querySelector(".js-form");
-  formElement.addEventListener("submit", onSubmit);
-
+  
   const initCurrencyConverter = () => {
-
+    const formElement = document.querySelector(".js-form");
+    formElement.addEventListener("submit", onSubmit);
   };
   
   initCurrencyConverter();
